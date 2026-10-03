@@ -1,7 +1,7 @@
 package com.abdullojon.messengerapp.navigation
 
-import androidx.lifecycle.LiveData
+import kotlinx.coroutines.flow.SharedFlow
 
 interface AppNavigationHandler {
-    val backStack: LiveData<AppNavigationParam>
+    val backStack: SharedFlow<AppNavigationParam>
 }

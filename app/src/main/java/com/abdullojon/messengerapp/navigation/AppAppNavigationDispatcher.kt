@@ -1,14 +1,23 @@
 package com.abdullojon.messengerapp.navigation
 
-import androidx.lifecycle.MutableLiveData
 import cafe.adriel.voyager.core.screen.Screen
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.launch
 
-object AppAppNavigationDispatcher: AppNavigator, AppNavigationHandler {
+object AppAppNavigationDispatcher : AppNavigator, AppNavigationHandler {
 
-    override val backStack = MutableLiveData<AppNavigationParam>()
+    private val _backStack = MutableSharedFlow<AppNavigationParam>(extraBufferCapacity = 1)
+    override val backStack = _backStack.asSharedFlow()
+
+    private val scope = CoroutineScope(Dispatchers.Main.immediate)
 
     private fun navigate(param: AppNavigationParam) {
-        backStack.postValue(param)
+        scope.launch {
+            _backStack.emit(param)
+        }
     }
 
     override fun navigateTo(screen: Screen) = navigate {
