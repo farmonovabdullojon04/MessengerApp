@@ -29,6 +29,10 @@ class LocalStorage @Inject constructor(
         get() = prefs.getString("device_id", null)
         set(value) = prefs.edit().putString("device_id", value).apply()
 
+    var phone: String?
+        get() = prefs.getString("phone", null)
+        set(value) = prefs.edit().putString("phone", value).apply()
+
     fun clear() {
         prefs.edit().clear().apply()
     }
