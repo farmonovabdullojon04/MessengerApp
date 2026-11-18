@@ -1,0 +1,181 @@
+{
+  "project_info": {
+    "project_number": "692021965242",
+    "project_id": "eduapp-3f507",
+    "storage_bucket": "eduapp-3f507.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:4e1591cecf487b7ef3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.bot_ls51"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:86598a6f70935f38f3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.edu_app_firebase_mvi_ls46"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:bae458e40c707542f3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.eduapp_firebase_ls43"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:6ee84f88a86caecff3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.examweakly3month"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:052238db306edab4f3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.focustime_abdullojon_farmonov"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:6018a3c209c07ce2f3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.googlemapclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:206ffee32a3d7a43f3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.messengerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:855361e571cc823bf3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.uzumversiya_ls47"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692021965242:android:73acaf9326b89f9bf3ed83",
+        "android_client_info": {
+          "package_name": "com.abdullojon.x_o_oyini_ls44"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcidrCuMCakc_kvJgfbxjXID1V9679KK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

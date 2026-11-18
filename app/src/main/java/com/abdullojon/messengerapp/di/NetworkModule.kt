@@ -1,6 +1,7 @@
 package com.abdullojon.messengerapp.di
 
 import com.abdullojon.messengerapp.data.source.remote.api.AuthApi
+import com.abdullojon.messengerapp.data.source.remote.api.DeviceApi
 import com.abdullojon.messengerapp.data.source.remote.api.UserApi
 import com.google.gson.Gson
 import dagger.Module
@@ -55,4 +56,8 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideUserApi(retrofit: Retrofit): UserApi=retrofit.create(UserApi::class.java)
+
+    @Provides
+    @Singleton
+    fun provideDeviceApi(retrofit: Retrofit): DeviceApi=retrofit.create(DeviceApi::class.java)
 }

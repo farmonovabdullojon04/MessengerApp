@@ -14,7 +14,6 @@ class UserRepositoryImpl @Inject constructor(
     private val localStorage: LocalStorage,
     private val gson: Gson
 ) : UserRepository {
-
     override suspend fun getMe(): Result<UserResponseDto> {
         return runCatching {
             val response = userApi.getMe()
@@ -49,6 +48,39 @@ class UserRepositoryImpl @Inject constructor(
                     throw Exception("Ushbu username band.Boshqa username tanlang.")
                 }
                 throw Exception(errorDto?.message?:"Profilni yangilashda xatolik ?(${response.code()})")
+            }
+        }
+    }
+
+    override suspend fun getUserById(userId: String): Result<UserResponseDto> {
+        return runCatching {
+            val response=userApi.getUserById(userId)
+            if (response.isSuccessful){
+                response.body()?:throw Exception("Foydalanuvchi ma'lumotlari bo'sh")
+            }else{
+                val errorBodyString=response.errorBody()?.string()
+                val errorDto=errorBodyString?.let {
+                    runCatching { gson.fromJson(it, ErrorResponseDto::class.java) }.getOrNull()
+                }
+                throw Exception(errorDto?.message?:"Foydalanuvchi topilmadi (${response.code()})")
+            }
+        }
+    }
+
+    override suspend fun searchUsers(
+        query: String,
+        limit: Int
+    ): Result<List<UserResponseDto>> {
+        return runCatching {
+            val response=userApi.searchUsers(query,limit)
+            if (response.isSuccessful){
+                response.body()?:emptyList()
+            }else{
+                val errorBodyString=response.errorBody()?.string()
+                val errorDto=errorBodyString?.let {
+                    runCatching { gson.fromJson(it, ErrorResponseDto::class.java) }.getOrNull()
+                }
+                throw Exception(errorDto?.message?:"Qidirishda xatolik(${response.code()})")
             }
         }
     }
